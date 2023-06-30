@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Master: Organize, Prioritize, Conquer!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="task.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="task.jpg" alt="Task Master Logo" class="logo" />
+        <span class="task-master" id="company">Task Master</span>
+      </div>
+      <a class="nav-options" href="#company">Home</a>
+      <a class="nav-options" href="#taskList">Tasks</a>
+      <a class="nav-options" href="#about">About</a>
+    </div>
+    <main>
+      <div class="welcome-message">
+        <h1 id="heading">Simplify Your To-Do List with Task Master</h1>
+        <p>Stay organized and conquer your tasks.</p>
+      </div>
+
+      <div class="task-form-container">
+        <div class="left-space">
+          <img src="taskboard.jpg" alt="Left Image" />
+        </div>
+
+        <div class="task-form" id="taskForm">
+          <h2>Add Task</h2>
+          <form>
+            <label for="title"><b>Title:</b></label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Enter task title"
+              required
+            />
+
+            <label for="description"><b>Description: </b></label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              placeholder="Enter task description"
+              required
+            ></textarea>
+
+            <input type="submit" value="+Add+" id="submitbtn" />
+          </form>
+        </div>
+
+        
+      </div>
+
+      <div id="notification" class="notification">
+        <span class="message"></span>
+        <button id="closeNotification">Close</button>
+      </div>
+
+      <h2 id="tasksHeading">Task-List</h2>
+      <div id="taskList"></div>
+
+      <script src="script.js"></script>
+      <hr />
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Thanks for visiting Task-Master, which is a <b>To-Do List</b> based
+          project!
+        </p>
+        <p>
+          This project aims to provide a simple and intuitive way to manage your
+          tasks and stay organized. With this to-do list, you can easily add and
+          delete tasks as needed.
+        </p>
+        <p>
+          Whether you're managing your personal tasks, organizing your work
+          projects, or keeping track of your daily activities, Task-Master
+          application has got you covered.
+        </p>
+        <p>
+          <b>Created by Mukul Rana</b>, this project showcases the power of
+          <b>HTML, CSS, and JavaScript</b> in building interactive and
+          functional web applications.
+        </p>
+        <p>
+          Start organizing your tasks and boosting your productivity with this
+          user-friendly Task-Master Website
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>Made with <span class="heart-icon">&hearts;</span> by Mukul Rana</p>
+        <p>&copy; 2023 All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
